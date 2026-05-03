@@ -40,6 +40,11 @@
  */
 #define MAP(x, x1, x2, y1, y2) ((((float)(x)) - ((float)(x1))) / (((float)(x2)) - ((float)(x1))) * (((float)(y2)) - ((float)(y1))) + ((float)(y1)))
 
+/**
+ * @brief Linear interpolation between a and b via alpha (0.0 to 1.0).
+ */
+#define LERP(a, b, alpha) ((a) + ((float)(alpha)) * ((float)(b) - (float)(a)))
+
 #endif
 
 //------------------------------------------------------------------------------
