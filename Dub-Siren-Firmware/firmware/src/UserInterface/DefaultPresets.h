@@ -21,7 +21,7 @@ extern const SynthesiserParameters marioCoin;
 extern const SynthesiserParameters bombFalling;
 extern const SynthesiserParameters policeSiren;
 extern const SynthesiserParameters classicDubSirenLow;
-extern const SynthesiserParameters highHat;
+extern const SynthesiserParameters dubGlideBass;
 extern const SynthesiserParameters classicDubSirenHigh;
 extern const SynthesiserParameters bombExploding;
 extern const SynthesiserParameters airRaidSiren;

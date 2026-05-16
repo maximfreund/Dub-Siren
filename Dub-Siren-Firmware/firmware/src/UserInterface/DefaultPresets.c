@@ -96,18 +96,23 @@ const SynthesiserParameters classicDubSirenLow = {
     .delayFilterFrequency = 6876.527832,
 };
 
-const SynthesiserParameters highHat = {
+const SynthesiserParameters dubGlideBass = {
+    // VCO triangle gives odd harmonics (3rd, 5th...) for dirty UK dub character.
+    // LFO sine at 1.8 Hz wobbles pitch between 32 Hz and 68 Hz - full sub-bass
+    // range for a 30 Hz soundsystem. Gate stays open (lfoGateControl=false) so
+    // the player rides the gate button live to wabble in and out of the mix.
+    // 50% delay feedback + 600 Hz dark LP on repeats = deep dub echo.
     .lfoWaveform = LfoWaveformSine,
-    .lfoShape = 0.500000,
-    .lfoFrequency = 14.999997,
-    .lfoAmplitude = 0.000000,
-    .lfoGateControl = true,
-    .vcoWaveform = VcoWaveformOneBitNoise,
-    .vcoFrequency = 4999.999023,
-    .delayTime = 0.380047,
-    .delayFeedback = 0.284454,
+    .lfoShape = 0.5f,
+    .lfoFrequency = 1.8f,
+    .lfoAmplitude = 18.0f,
+    .lfoGateControl = false,
+    .vcoWaveform = VcoWaveformTriangle,
+    .vcoFrequency = 50.0f,
+    .delayTime = 0.380000f,
+    .delayFeedback = 0.500000f,
     .delayFilterType = DelayFilterTypeLowPass,
-    .delayFilterFrequency = 6874.536133,
+    .delayFilterFrequency = 600.0f,
 };
 
 const SynthesiserParameters classicDubSirenHigh = {

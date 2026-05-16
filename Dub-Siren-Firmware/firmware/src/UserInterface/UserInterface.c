@@ -184,7 +184,7 @@ static void RestoreDefaultPresets() {
     eepromData.presets[3] = bombFalling;
     eepromData.presets[4] = policeSiren;
     eepromData.presets[5] = classicDubSirenLow;
-    eepromData.presets[6] = highHat;
+    eepromData.presets[6] = dubGlideBass;
     eepromData.presets[7] = classicDubSirenHigh;
     eepromData.presets[8] = bombExploding;
     eepromData.presets[9] = airRaidSiren;
