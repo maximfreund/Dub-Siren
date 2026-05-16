@@ -1,4 +1,10 @@
+
+
+
 # Dub Siren
+
+> Fork of [xioTechnologies/Dub-Siren](https://github.com/xioTechnologies/Dub-Siren) by [Seb Madgwick](https://github.com/xioTechnologies).
+> Changes in this fork: replaced discontinued components, updated BOM, added dub glide bass preset, added simulate.py for sound preview
 
 A monophonic synthesiser comprised of an LFO, VCO, and Delay.  The synthesiser is controlled by 9 potentiometers and 3 buttons.  Configurations can be stored to 1 of 10 preset keys.  Pressing a preset key will override the potentiometers and buttons with the stored configuration.
 
